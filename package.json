@@ -1,9 +1,12 @@
 {
+  "homepage": "https://safidyramaroson.github.io/ManaTimeTest",
   "name": "test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
